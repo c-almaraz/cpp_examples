@@ -11,10 +11,9 @@ void myfunc(const char * filename)
 	fclose(fp);	
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-
-	const QString& newfilename="/home/rvalenzuela/Github/cpp_examples/swp.1010123220700.TF43P3.40.19.2_AIR_v2.QC";
+	const QString& newfilename=argv[1];
 
 	QByteArray ba = newfilename.toLocal8Bit();
 	const char * ccfilename = ba.constData();
