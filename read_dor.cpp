@@ -14,9 +14,7 @@ void myfunc1(const char * filename)
 bool myfunc2(const QString& filename)
 {
 	Dorade swpfile;
-	
 	swpfile.setFilename(filename);
-
 	if(swpfile.readSwpfile())
 		return true;	
 	
