@@ -40,14 +40,15 @@ run_qmake = 'qmake -o Makefile ' + qt_project
 os.system(run_qmake)
 os.system('make')
 
-# """ run """
-# exe = qt_project[:-4]
+""" run """
+exe = qt_project[:-4]
 # foo = home + '/Documents/swp.1010123211454.TF43P3.410.19.2_AIR_v6'
-# os.system('./' + exe + ' ' + foo)
+foo = '/home/raul/P3/dorade/case03/leg01/swp.1010123211754.TF43P3.480.19.2_AIR_v21'
+os.system('./' + exe + ' ' + foo)
 
-# """ remove unnecesary files """
-# for f in glob('*.o'):
-# 	os.remove(f)
-# os.remove(exe)
-# os.remove('Makefile')
+""" remove unnecesary files """
+for f in glob('*.o'):
+	os.remove(f)
+os.remove(exe)
+os.remove('Makefile')
 
