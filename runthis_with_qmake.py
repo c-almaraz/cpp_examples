@@ -43,7 +43,8 @@ os.system('make')
 """ run """
 exe = qt_project[:-4]
 # foo = home + '/Documents/swp.1010123211454.TF43P3.410.19.2_AIR_v6'
-foo = '/home/raul/P3/dorade/case03/leg01/swp.1010123211754.TF43P3.480.19.2_AIR_v21'
+# foo = '/home/raul/P3/dorade/case03/leg01/swp.1010123211754.TF43P3.480.19.2_AIR_v21'
+foo=''
 os.system('./' + exe + ' ' + foo)
 
 """ remove unnecesary files """
